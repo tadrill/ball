@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Don't Let Any Balls Touch</title>
+		
+		<link href="balls.css" type="text/css" rel="stylesheet" />
+		<script src="balls.js" type="text/javascript"></script>
+	</head>
+	<body>
+	
+	<h1>Don't Let The Balls Touch!</h1>
+	<div id="blurb">
+			<p><strong id="highscore"></strong><p>
+			<p></p>
+			<p>WASD to control the first ball and the <strong>arrow keys<strong> to control the other one</p>
+		</div>
+		<div id="controls">
+			<input type="button" id="go" value="GO!">
+			Background Color
+			<select id="background">
+				<option value="black">Black</option>
+		  	    <option value="blue">Blue</option>
+			    <option value="orange">Orange</option>
+			    <option value="yellow">Yellow</option>
+		  	    <option value="green">Green</option>
+			    <option value="purple">Purple</option>
+			    <option value="lightblue">Light Blue</option>
+			</select>
+			Multiballs
+			<input id="multi" type="checkbox" name="check" value="on" checked><br>
+			Ball1 Color
+			<select id="ballColor1" name="color1">
+				<option value="black">Black</option>
+		  	    <option value="blue">Blue</option>
+			    <option value="red">Red</option>
+			    <option value="orange">Orange</option>
+			    <option value="yellow">Yellow</option>
+		  	    <option value="green">Green</option>
+			    <option value="purple">Purple</option>
+			    <option value="lightblue">Light Blue</option>
+			</select>
+			Ball2 Color
+			<select id="ballColor2" name="color2">
+				<option value="black">Black</option>
+		  	    <option value="blue">Blue</option>
+			    <option value="red">Red</option>
+			    <option value="orange">Orange</option>
+			    <option value="yellow">Yellow</option>
+		  	    <option value="green">Green</option>
+			    <option value="purple">Purple</option>
+			    <option value="lightblue">Light Blue</option>
+			</select>
+		</div>
+
+		<div id="game">
+			<div id="c1">
+			</div>
+			<div id="c2">
+			</div>
+		</div>
+		<ul id="highscores">
+		</ul>
+		
+		
+		
+	</body>
+</html>
