@@ -1,0 +1,50 @@
+/*
+css style sheet
+*/
+
+#game {
+	margin-right: auto;
+	margin-left: auto;
+	background-color: black;
+	position: relative;
+	/*
+	keep a square
+	*/
+	height: 400px;
+	width: 400px;
+	overflow: hidden;
+}
+
+#blurb, #controls {
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+body {
+	text-align: center;
+	background-color: lightgrey;
+	background-image: url("http://www.abpathfinder.com/wp-content/uploads/2013/02/balls1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#c1, #c2, .ball {
+	position: absolute;
+	border-radius: 50%;
+}
+
+#c1 {
+	background-color: white;
+	left: 0px;
+	top: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+#c2 {
+	background-color: lightblue;
+	left: 100px;
+	top: 100px;
+	width: 50px;
+	height: 50px;
+}
