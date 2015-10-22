@@ -110,7 +110,6 @@ window.onload = function() {
 	$("ballColor2").onchange = changeBall;
 	$("multi").onclick = multi;
 	$("multi").checked = true;
-	highscores();
 }
 
 function start() {
@@ -299,17 +298,17 @@ function speedUp() {
 // id1 is the id of one of the game circles to be compared
 // id2 is the class of the circles being thrown
 function collision(id1, id2) {
-	var circle1 = document.querySelector(id1); // {radius: 20, x: 5, y: 5};
-	var circle2list = document.querySelectorAll(id2); // {radius: 12, x: 10, y: 5};
+	var circ1 = document.querySelector(id1); // {radius: 20, x: 5, y: 5};
+	var circ2list = document.querySelectorAll(id2); // {radius: 12, x: 10, y: 5};
 	var c1radius, c2radius, c1x, c2x, c1y, c2y, dx, dy, distance;
-	for (var i = 0; i < circle2list.length; i++) {
-		circle2 = circle2list[i];
-		c1radius = (parseInt(window.getComputedStyle(circle1).width)) / 2;
-		c2radius = (parseInt(window.getComputedStyle(circle2).width)) / 2;
-		c1x = parseInt(window.getComputedStyle(circle1).left) + c1radius;
-		c2x = parseInt(window.getComputedStyle(circle2).left) + c2radius;
-		c1y = parseInt(window.getComputedStyle(circle1).top) + c1radius;
-		c2y = parseInt(window.getComputedStyle(circle2).top) + c2radius;
+	for (var i = 0; i < circ2list.length; i++) {
+		circ2 = circ2list[i];
+		c1radius = (parseInt(window.getComputedStyle(circ1).width)) / 2;
+		c2radius = (parseInt(window.getComputedStyle(circ2).width)) / 2;
+		c1x = parseInt(window.getComputedStyle(circ1).left) + c1radius;
+		c2x = parseInt(window.getComputedStyle(circ2).left) + c2radius;
+		c1y = parseInt(window.getComputedStyle(circ1).top) + c1radius;
+		c2y = parseInt(window.getComputedStyle(circ2).top) + c2radius;
 		dx = c1x - c2x;
 		dy = c1y - c2y;
 		distance = Math.sqrt(dx * dx + dy * dy);

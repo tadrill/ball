@@ -7,49 +7,58 @@
 		<script src="balls.js" type="text/javascript"></script>
 	</head>
 	<body>
-	
+	<div id="blurb">	
 	<h1>Don't Let The Circles Touch!</h1>
-	<div id="blurb">
-			<p><strong id="highscore"></strong><p>
-			<p></p>
-			<p>WASD to control the first ball and the <strong>arrow keys<strong> to control the other one</p>
+			<strong id="highscore"></strong>
+			<br>
+			<p>WASD to control the first circle and the <br><strong>arrow keys</strong> to control the other one</p>
+			<input type="button" id="go" value="GO!">
+			One Or Two Circles
+			<input id="multi" type="checkbox" name="check" value="on" checked><br>
 		</div>
 		<div id="controls">
-			<input type="button" id="go" value="GO!">
-			Background Color
-			<select id="background">
-				<option value="black">Black</option>
-		  	    <option value="blue">Blue</option>
-			    <option value="orange">Orange</option>
-			    <option value="yellow">Yellow</option>
-		  	    <option value="green">Green</option>
-			    <option value="purple">Purple</option>
-			    <option value="lightblue">Light Blue</option>
-			</select>
-			Multiballs
-			<input id="multi" type="checkbox" name="check" value="on" checked><br>
-			Ball1 Color
-			<select id="ballColor1" name="color1">
-				<option value="black">Black</option>
-		  	    <option value="blue">Blue</option>
-			    <option value="red">Red</option>
-			    <option value="orange">Orange</option>
-			    <option value="yellow">Yellow</option>
-		  	    <option value="green">Green</option>
-			    <option value="purple">Purple</option>
-			    <option value="lightblue">Light Blue</option>
-			</select>
-			Ball2 Color
-			<select id="ballColor2" name="color2">
-				<option value="black">Black</option>
-		  	    <option value="blue">Blue</option>
-			    <option value="red">Red</option>
-			    <option value="orange">Orange</option>
-			    <option value="yellow">Yellow</option>
-		  	    <option value="green">Green</option>
-			    <option value="purple">Purple</option>
-			    <option value="lightblue">Light Blue</option>
-			</select>
+			<div class="colors">
+			<ul>
+				<li>
+				Background Color
+				<select id="background" class="colors">
+					<option value="black">Black</option>
+			  	    <option value="blue">Blue</option>
+				    <option value="orange">Orange</option>
+				    <option value="yellow">Yellow</option>
+			  	    <option value="green">Green</option>
+				    <option value="purple">Purple</option>
+				    <option value="lightblue">Light Blue</option>
+				</select>
+				</li>
+				<li>
+				First Circle Color
+				<select id="ballColor1" name="color1">
+					<option value="black">Black</option>
+			  	    <option value="blue">Blue</option>
+				    <option value="red">Red</option>
+				    <option value="orange">Orange</option>
+				    <option value="yellow">Yellow</option>
+			  	    <option value="green">Green</option>
+				    <option value="purple">Purple</option>
+				    <option value="lightblue">Light Blue</option>
+				</select>
+				</li>
+				<li>
+				Second Circle Color
+				<select id="ballColor2" name="color2">
+					<option value="black">Black</option>
+			  	    <option value="blue">Blue</option>
+				    <option value="red">Red</option>
+				    <option value="orange">Orange</option>
+				    <option value="yellow">Yellow</option>
+			  	    <option value="green">Green</option>
+				    <option value="purple">Purple</option>
+				    <option value="lightblue">Light Blue</option>
+				</select>
+				</li>
+			</ul>
+			</div>
 		</div>
 
 		<div id="game">
